@@ -1,0 +1,36 @@
+name: Node.js CI
+
+on:
+  push:
+    branches:
+      - main
+      
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [20.x]
+
+    steps:
+    - name: Checkout PRINXE-MD repository
+      uses: actions/checkout@v3
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+
+    - name: Install libraries
+      run: npm install
+
+    - name: Start PRINXE-MD
+    
+      env:
+          OWNER_NAME: Avirup
+          OWNER_NUMBER: +919331218857
+          SESSION_ID: Prince~AkwSxTyb#QLlTp1ejwqCuBklddptLJErtVFL_MEGz4bu1ksWI-pw
+
+      run: npm start
