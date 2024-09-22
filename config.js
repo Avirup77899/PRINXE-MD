@@ -11,7 +11,7 @@ for (let i = 0; i < ownerlist.length; i += 2) {
     const owner = [
         ownerlist[i],            
         ownerlist[i + 1],         
-        true                        
+        false                        
     ];
     global.owner.push(Avirup);
 }
