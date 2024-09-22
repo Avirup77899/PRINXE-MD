@@ -6,11 +6,6 @@ import fs from 'fs'
 import dotenv from 'dotenv'
 dotenv.config()
 
-const ownervb = process.env.OWNERS;
-if (!ownervb){
-   throw new Error("Avirup");
-}
-
 const ownerlist = ownervb.split(';');
 
 global.owner = "Avirup";
