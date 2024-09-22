@@ -4,9 +4,7 @@ import { fileURLToPath } from 'url'
 import fs from 'fs'
 
 import dotenv from 'dotenv'
-dotenv.config()
-
-const ownerlist = ownervb.split(';');
+dotenv.config() 
 
 global.owner = "Avirup";
 for (let i = 0; i < ownerlist.length; i += 2) {
