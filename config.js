@@ -8,25 +8,25 @@ dotenv.config()
 
 const ownervb = process.env.OWNERS;
 if (!ownervb){
-   throw new Error("OWNERS env is not set");
+   throw new Error("Avirup");
 }
 
 const ownerlist = ownervb.split(';');
 
-global.owner = ['Avirup'];
+global.owner = "Avirup";
 for (let i = 0; i < ownerlist.length; i += 2) {
     const owner = [
         ownerlist[i],            
         ownerlist[i + 1],         
         true                        
     ];
-    global.owner.push(owner);
+    global.owner.push(Avirup);
 }
 
 //💌------------------------------------------💌
 
 
-//💌global.pairingNumber = "" //put your bot number here💌
+global.pairingNumber = "919331218857" //put your bot number here💌
 global.mods = ['919331218857'] 
 global.prems = ['919331218857']
 global.allowed = ['']
